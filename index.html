@@ -2,82 +2,77 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tintas Tocantins</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
       font-family: Arial, sans-serif;
-      background-color: #ff3c2e;
-      color: white;
+      margin: 0;
+      background-color: #ff3b30;
+      color: #fff;
       text-align: center;
     }
-
-    header img {
+    header {
+      background-color: #000;
+      padding: 10px 0;
+    }
+    header nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    header nav a:hover {
+      text-decoration: underline;
+    }
+    img.logo {
       width: 100%;
       height: auto;
       display: block;
     }
-
-    nav {
-      background-color: #000;
-      padding: 10px 0;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 20px;
-      font-weight: bold;
-    }
-
     section {
       padding: 40px 20px;
     }
-
-    h2 {
+    h1, h2, h3 {
       color: yellow;
       margin-bottom: 10px;
     }
-
     .buttons a {
       display: inline-block;
       margin: 10px;
-      padding: 12px 20px;
-      background-color: #5c4b7d;
+      padding: 10px 20px;
+      background-color: #5e4b8b;
       color: white;
       text-decoration: none;
-      border-radius: 8px;
+      border-radius: 10px;
       font-weight: bold;
     }
-
     footer {
       background-color: #000;
       color: white;
-      padding: 15px;
+      padding: 15px 10px;
       font-size: 14px;
     }
   </style>
 </head>
 <body>
 
+  <!-- Logo da loja -->
+  <img class="logo" src="https://i.postimg.cc/X7Hp6Gf9/file-00000000895861f58da90f7d753e0c07.png" alt="Logo Tintas Tocantins" />
+
+  <!-- Menu -->
   <header>
-    <img src="https://i.postimg.cc/X7Hp6Gf9/file-00000000895861f58da90f7d753e0c07.png" alt="Logo Tintas Tocantins" />
+    <h2>Tintas Tocantins</h2>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre a Loja</a>
+      <a href="#contato">Contato</a>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#inicio">Início</a>
-    <a href="#sobre">Sobre a Loja</a>
-    <a href="#contato">Contato</a>
-  </nav>
-
+  <!-- Seções -->
   <section id="inicio">
-    <h2>Bem-vindo à Tintas Tocantins</h2>
+    <h1>Bem-vindo à Tintas Tocantins</h1>
     <p>Qualidade em primeiro lugar! Aqui você encontra tintas para todos os tipos de projetos, com o melhor atendimento da região.</p>
   </section>
 
@@ -87,7 +82,7 @@
   </section>
 
   <section id="contato">
-    <h2>Contato</h2>
+    <h3>Contato</h3>
     <p>Em breve nossos canais de atendimento estarão disponíveis aqui.</p>
     <div class="buttons">
       <a href="#">WhatsApp</a>
@@ -95,6 +90,7 @@
     </div>
   </section>
 
+  <!-- Rodapé -->
   <footer>
     © 2025 Tintas Tocantins - Todos os direitos reservados.
   </footer>
